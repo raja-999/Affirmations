@@ -1,4 +1,12 @@
 package raja.bey.affirmations.model
 
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
 
-    data class affirmations(val stringResourceId: Int)
+
+data class affirmations(
+        @StringRes
+        val stringResourceId: Int,
+        @DrawableRes
+        val imageResourceId: Int
+)
